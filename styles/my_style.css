@@ -1,0 +1,462 @@
+/*ШРИФТЫ*/
+@font-face {
+    font-family: 'Verdana Regular';
+    src: url('/fonts/Verdana/verdana.eot');
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Verdana Regular';
+    src:
+        local('Verdana Regular'),
+        url('/fonts/Verdana/verdana.woff') format('woff'),
+        url('/fonts/Verdana/Verdana-Regular.otf') format('otf'),
+        url('/fonts/Verdana/Verdana-Regular.svg') format('svg'),
+        url('/fonts/Verdana/verdana.eot') format('eot'),
+        url('/fonts/Verdana/verdana.eot') format('eot'),
+        url('/fonts/Verdana/verdana.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Tahoma Regular';
+    src:
+        local('Tahoma Regular'),
+        url('/fonts/Tahoma/Tahoma Regular.woff') format('woff'),
+        url('/fonts/Tahoma/Tahoma Regular.eot') format('eot'),
+        url('/fonts/Tahoma/Tahoma Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'MyriadProLight';
+    src:
+        local('MyriadProLight'),
+        url('/fonts/MyriadPro/MyriadProLight.ttf') format('truetype'),
+        url('/fonts/MyriadPro/MyriadPro-Light.otf') format('otf'),
+        url('/fonts/MyriadPro/MyriadProLight.woff') format('woff'),
+        url('/fonts/MyriadPro/MyriadPro-LightSemiExt.eot') format('eot'),,
+        url('/fonts/MyriadPro/MyriadProLight.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Junction';
+    src: url('/fonts/junction/junction-light.eot');
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Junction';
+    src:
+        local('Junction'),
+        url('/fonts/junction/Junction 02.ttf') format('truetype'),
+        url('/fonts/junction/Junction 02.otf') format('otf');
+ }
+
+/*END ШРИФТЫ*/
+
+/*header*/
+
+.logo_header {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    display: inline-block;
+    padding-top:45px;
+    vertical-align:top;
+    border:none;
+}
+
+.logo_header img {
+    border:none;
+}
+
+.tel_header {
+    font-family:'Junction';
+    position:relative;
+    display: inline-block;
+    float:right;
+    padding-top:60px;
+    vertical-align: top;
+}
+
+.tel_header a.phone {
+    text-decoration:none;
+}
+
+.tel_code {
+    font-size:18px;
+    line-height:1;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.tel_number {
+    font-size:30px;
+    line-height:1;
+    display: block;
+}
+
+/*END HEADER*/
+
+
+/*menu horisontals*/
+
+.horizontal_menu {
+    float: left;
+    width: 200px;
+    margin-left: -100%;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.horizontal_menu a {
+    text-decoration: none;
+    font-family: 'MyriadProLight';
+    font-size:40px;
+    line-height:1.1;
+    color:#363636;
+}
+
+.horizontal_menu a:active, .horizontal_menu a.active {
+    background-color:#707070;
+    color:#ffffff;
+}
+/*END horisontal menu*/
+
+/*vertical menu*/
+.vertical_menu{
+    display: none;
+}
+.vertical_menus {
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    overflow:hidden;
+    height:30px;
+    margin:20px 0;
+}
+.vertical_menus ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    position: relative;
+    left:50%;
+    float:left;
+    font:14px Arial, Helvetica, sans-serif;
+    height:30px;
+}
+.vertical_menus ul li {
+    position:relative;
+    left:-50%;
+    float:left;
+    margin:0 5px;
+    height:30px;
+}
+.vertical_menus ul li a {
+    display:block;
+    text-decoration:none;
+    padding:4px 10px;
+
+}
+.vertical_menu ul li a:hover {
+    background-color:#444;
+    color:#ffffff;
+}
+.vertical_menu a:active, .vertical_menu a.active {
+    background-color:#707070;
+    color:#ffffff;
+}
+
+
+/*contact_info*/
+div.contacts div{
+    margin:0 0 5px 0;
+}
+.contacts p{
+    color: #707070;
+}
+a.telInfo, a.mailInfo {
+    color:#363636;
+}
+a.telInfo:hover, a.mailInfo:hover {
+    text-decoration: none;
+}
+a.telInfo:hover, a.mailInfo:hover {
+    text-decoration: none;
+}
+a.telInfo:active, a.mailInfo:active {
+    color:#ffffff;
+}
+/*end contact_info*/
+
+/*Contact_form*/
+.button-submit {
+    width:80px;
+    height:28px;
+    border-top: 1px solid #707070;
+    background: #707070;
+    padding: 3.5px 7px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 12px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    vertical-align: middle;
+    position:absolute;
+    margin: 5px 3px 5px 0;
+    right:0;
+    z-index:10;
+}
+.button-submit:hover {
+    border-top-color: #707070;
+    background: #707070;
+    color: #ffffff;
+}
+.button-submit:active {
+    border-top-color: #707070;
+    background: #707070;
+}
+
+div.contact_form {
+    line-height:2;
+
+}
+div.contact_form form {
+    padding:2px 0 0 0;
+}
+
+div.contact_form form label {
+    width:100px;
+    display:inline-block;
+    vertical-align:top;
+
+}
+.captcha{
+    display:inline-block;
+    padding-right:10px;
+    vertical-align:middle;
+}
+
+input[type="email"], input[type="text"] {
+    width:230px;
+    margin:5px 0;
+    padding-left:4px;
+    background-color:#707070;
+    border: 1px solid #707070;
+    font-family: 'Tahoma Regular';
+    font-size:11px;
+    color:#ffffff;
+}
+
+textarea.quest_box {
+    vertical-align:top;
+    width:230px;
+    height:85px;
+    padding-left:4px;
+    margin: 5px 0;
+    vertical-align:top;
+    overflow:auto;
+    resize: none;
+    background-color:#707070;
+    border: 1px solid #707070;
+    font-family: 'Tahoma Regular';
+    font-size:11px;
+    color:#ffffff;
+}
+.captcha_block {
+    display:inline-block;
+}
+html .captcha-text {
+    width:139px;
+    display:inline;
+    padding-right:7px;
+}
+.quest_text {
+    vertical-align:top;
+
+}
+.contacts {
+    width:280px;
+    display:inline-block;
+    vertical-align:top;
+    font-family: 'Tahoma Regular';
+    font-size:12px;
+    line-height:2;
+    color:#363636;
+    word-wrap: break-word;
+}
+.contact_form {
+    width:339px;
+    display:inline-block;
+    position:relative;
+    word-wrap: break-word;
+}
+/*END CONTACT_FORM*/
+
+
+/*MAP*/
+.map{
+    position:relative;
+    padding-top:70px;
+    margin-right:10px;
+    left:0;
+}
+.map-title{
+    width:78px;
+    background-color:#707070;
+    margin-left:-4px;
+    border-left: 4px solid #707070;
+    color:#ffffff;
+    display:block;
+    font-size:11px;
+    font-weight:normal;
+}
+.map-content {
+    display:block;
+    max-width:100%;
+    outline: 4px solid #707070;
+    border: 1px solid #ffffff;
+    backgroung:url('images/where.png');
+}
+/*END MAP*/
+
+
+/*people RIGHT block*/
+
+.content h2  {
+    font-family: 'MyriadProLight';
+    font-size:18px;
+    line-height:1.5;
+    color:#363636;
+}
+
+p.text_block {
+    padding-top:10px;
+    font-family: 'Verdana Regular';
+    font-size:11px;
+    line-height: 2
+}
+.text_block strong{
+    font-weight: bold;
+}
+section.slides {
+    padding:16px 0 15px 0;
+}
+.block_image{
+    position:relative;
+    display: inline-block;
+    overflow:hidden;
+    width:78px;
+    height:78px;
+    margin-bottom:5px;
+    vertical-align:top;
+    text-align: center;
+}
+div .block_image img {
+    vertical-align: middle;
+    width:100%;
+    height:100%;
+    top:-15px;
+    text-align: center;
+}
+ul li {
+    list-style:none;
+}
+
+.block_right h2 {
+    padding-bottom:15px;
+}
+
+.block_right {
+    position: relative;
+    display: inline-block;
+    padding: 15px 0px 0 0;
+    vertical-align: top;
+    padding-right:0px;
+    font-family: 'Verdana Regular';
+    font-size:11px;
+}
+.block_right .block_descr {
+    width:136px;
+    display: inline-block;
+    vertical-align:top;
+    margin-top:-5px;
+    margin-left:10px;
+    word-wrap: break-word;
+}
+/*END people RIGHT block*/
+
+/*index RIGHT block*/
+
+/*end index RIGHT block*/
+
+
+
+/*FOOTER*/
+.vacancy, .copyright {
+    display: inline-block;
+    padding-top:3%;
+    vertical-align: top;
+}
+.copyright {
+    display: inline-block;
+    padding-top:3%;
+    vertical-align: top;
+    padding-right: 20px;
+}
+/*END FOOTER*/
+
+
+/*ELSE*/
+
+
+.new_slides h2{
+    font-size: 18px;
+}
+.block_text2{
+    display: inline-block;
+    vertical-align: top;
+    width: 124px;
+}
+.block_image2{
+    display: inline-block;
+    /*margin: 10px auto;*/
+    max-width: 100%;
+    /*
+    display: inline-block;
+    max-width: 50%;*/
+}
+.new_slides ul li{
+    font-size: 11px;
+    display: block;
+    vertical-align: top;
+    margin: 0px 20px 0px 0px;
+}
+.new_slides ul{
+    display: block;
+
+}
+.new_slides{
+    /*max-width: 775px;*/
+}
+.block_right1{
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    width: 30%;
+    font-size: 13px;
+}
+.last_contact_block{
+    margin-right: 0px;}
+/*END ELSE*/
